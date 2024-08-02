@@ -55,46 +55,77 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //carousel
 const items = document.querySelectorAll('.carousel-item');
-    const indicators = document.querySelectorAll('.indicator');
-    let currentIndex = 1;
+const indicators = document.querySelectorAll('.indicator');
+let currentIndex = 1;
+let intervalId;
 
-    function updateCarousel() {
-        items.forEach((item, index) => {
-            const img = item.querySelector('img');
-            item.classList.remove('active', 'prev', 'next');
-            if (index === currentIndex) {
-                item.classList.add('active');
-                img.classList.add('rounded-2xl');
-            } else if (index === (currentIndex - 1 + items.length) % items.length) {
-                item.classList.add('prev');
-            } else if (index === (currentIndex + 1) % items.length) {
-                item.classList.add('next');
-            }
-        });
-
-        indicators.forEach((indicator, index) => {
-            indicator.classList.remove('active');
-            if (index === currentIndex) {
-                indicator.classList.add('active');
-            }
-        });
-    }
-
-    document.getElementById('prev').addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        updateCarousel();
+function updateCarousel() {
+    items.forEach((item, index) => {
+        const img = item.querySelector('img');
+        item.classList.remove('active', 'prev', 'next');
+        if (index === currentIndex) {
+            item.classList.add('active');
+            img.classList.add('rounded-2xl');
+        } else if (index === (currentIndex - 1 + items.length) % items.length) {
+            item.classList.add('prev');
+        } else if (index === (currentIndex + 1) % items.length) {
+            item.classList.add('next');
+        }
     });
 
-    document.getElementById('next').addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % items.length;
-        updateCarousel();
+    indicators.forEach((indicator, index) => {
+        indicator.classList.remove('active');
+        if (index === currentIndex) {
+            indicator.classList.add('active');
+        }
     });
+}
 
-    indicators.forEach((indicator) => {
-        indicator.addEventListener('click', (e) => {
-            currentIndex = parseInt(e.target.getAttribute('data-index'));
-            updateCarousel();
-        });
-    });
-
+function goToNextSlide() {
+    currentIndex = (currentIndex + 1) % items.length;
     updateCarousel();
+}
+
+function startAutoSlide() {
+    intervalId = setInterval(goToNextSlide, 3000); // Change slide every 3 seconds
+}
+
+function stopAutoSlide() {
+    clearInterval(intervalId);
+}
+
+document.getElementById('prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    updateCarousel();
+    stopAutoSlide();
+    startAutoSlide(); // Restart auto slide after manual slide change
+});
+
+document.getElementById('next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % items.length;
+    updateCarousel();
+    stopAutoSlide();
+    startAutoSlide(); // Restart auto slide after manual slide change
+});
+
+indicators.forEach((indicator) => {
+    indicator.addEventListener('click', (e) => {
+        currentIndex = parseInt(e.target.getAttribute('data-index'));
+        updateCarousel();
+        stopAutoSlide();
+        startAutoSlide(); // Restart auto slide after manual slide change
+    });
+});
+
+updateCarousel();
+startAutoSlide();
+
+
+// AOS
+  $(document).on('ready', function () {
+    // initialization of aos
+    AOS.init({
+      duration: 650,
+      once: true
+    });
+  });

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="css/output.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,12 +84,12 @@
 		<div class="bg-primary relative">
 			<div class="flex flex-wrap bg-secondary">
 				<div class="w-full ml-36 px-4 lg:w-1/2 pb-16 mt-24">
-					<h1 data-aos="fade-up" class="block font-bold text-clthird mb-5 text-5xl lg:text-6xl">
+					<h1 data-aos="fade-up" data-aos-duration="1000" class="block text-clthird mb-5 text-5xl lg:text-6xl">
 						Kami Siap Mendengar
-					<h1 data-aos="fade-up" class="block font-bold text-clthird mb-14 text-5xl lg:text-6xl">
+					<h1 data-aos="fade-up" data-aos-duration="1000" class="block text-clthird mb-14 text-5xl lg:text-6xl">
 						dan Melayani Anda
 					</h1>
-					<p data-aos="fade-up" data-aos-delay="200" class="w-3/4 font-medium text-clthird mb-14 leading-relaxed lg:text-left text-center text-xl">
+					<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="w-3/4 font-medium text-clthird mb-14 leading-relaxed lg:text-left text-center text-xl">
 						Kami menghargai setiap masukan dan pertanyaan 
 						dari pelanggan kami. Hubungi Aurorae Boulangerie 
 						untuk informasi lebih lanjut tentang produk kami, 
@@ -96,8 +97,8 @@
 						dan mendengar dari Anda.</p>
 				</div>
 			</div>
-			<div class="absolute top-0 right-0 w-full lg:w-1/2 h-96 flex items-center mt-24 pt-28">
-				<img src="img/contact/1c.png" alt="hero" class="w-full h-auto">
+			<div data-aos="fade-up" data-aos-duration="1000" class="absolute top-0 right-0 w-full lg:w-1/2 h-96 flex items-center mt-24 pt-28">
+				<img src="img/hero-contact.png" alt="hero" class="w-full h-auto">
 			</div>
 		</div>
 	</section>
@@ -105,10 +106,10 @@
 
 	<!-- Contact -->
 	<section id="contact" class="py-12 bg-secondary">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 w-10/12">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Contact Form -->
-                <div>
+                <div data-aos="fade-right" data-aos-duration="1000">
                     <form action="#" method="POST" class="space-y-4">
                         <div>
                             <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 bg-primary border border-primary rounded-md text-clthird" placeholder="Nama" >
@@ -126,20 +127,20 @@
                 </div>
                 <!-- Contact Info -->
                 <div>
-                    <div class="bg-primary rounded-lg p-6">
+                    <div data-aos="fade-left" data-aos-duration="1000" class="bg-primary rounded-lg p-6">
                         <h3 class="text-xl font-bold mb-4">Info</h3>
                         <ul class="space-y-2">
-                            <li class="py-2 flex items-center space-x-2 text-clthird"><img src="img/contact/ig.png" alt="Instagram" class="h-6 w-6"> <span>@aurorae.boulangerie</span></li>
+                            <li class="py-2 flex items-center space-x-2 text-clthird"><img src="img/contact/ig.png" alt="Instagram" class="h-6 w-6"> <a href="https://www.instagram.com/aurorae.boulangerie?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@aurorae.boulangerie</a></li>
                             <li class="py-2 flex items-center space-x-2 text-clthird"><img src="img/contact/phone.png" alt="Phone" class="h-6 w-6"> <span>+62 821-1201-0671</span></li>
                             <li class="py-2 flex items-center space-x-2 text-clthird"><img src="img/contact/calendar.png" alt="Calendar" class="h-6 w-6"> <span>Selasa - Minggu</span></li>
                             <li class="py-2 flex items-center space-x-2 text-clthird"><img src="img/contact/clock.png" alt="Clock" class="h-6 w-6"> <span>10.00 - 19.00 WIB</span></li>
-                            <li class="py-2 flex items-center space-x-2 text-clthird"><img src="img/contact/pin.png" alt="Location" class="h-6 w-4"> <span>Cigondewah Rahayu, Kota Bandung 40215</span></li>
+                            <li class="py-2 flex items-center space-x-2 text-clthird"><img src="img/contact/pin.png" alt="Location" class="h-7 w-6"> <span>Cigondewah Rahayu, Kota Bandung 40215</span></li>
                         </ul>
                     </div>
                     <div class="flex justify-around mt-6">
-                        <img src="img/contact/spfood.png" alt="ShopeeFood Logo" class="w-22 h-10">
-                        <img src="img/contact/gofood.png" alt="GoFood Logo" class="w-22 h-10">
-                        <img src="img/contact/grabfood.png" alt="GrabFood Logo" class="w-22 h-10">
+                        <a href="https://shopee.co.id/universal-link/now-food/shop/20040784?deep_and_deferred=1&shareChannel=copy_link" data-aos="fade-up" data-aos-duration="500"><img src="img/contact/spfood.png" alt="ShopeeFood Logo" class="w-22 h-10"></a>
+                        <a href="https://gofood.link/a/BCmHavb" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200"><img src="img/contact/gofood.png" alt="GoFood Logo" class="w-22 h-10"></a>
+                        <a href="https://r.grab.com/g/6-20240801_234640_BF2973FB883242CA9A3836225322472D_MEXMPS-6-C2W3T74EVBV3L2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"><img src="img/contact/grabfood.png" alt="GrabFood Logo" class="w-22 h-10"></a>
                     </div>
                 </div>
             </div>
@@ -163,7 +164,7 @@
                     <!-- StoreName -->
                     <div class="text-white mx-4 text-left">
                         <p class="text-lg font-bold mb-2">Aurorae Boulangerie</p>
-                        <p class="text-md">Outlet Location</p>
+                        <a href="https://maps.app.goo.gl/iaaUhWfeBMfchK226"><p class="text-md">Outlet Location</p></a>
                     </div>
 
                     <!-- Contact Us -->
@@ -178,7 +179,7 @@
                     <div class="text-white mx-4 text-left">
                         <p class="text-lg font-bold mb-2">Follow Us</p>
                         <div class="flex space-x-4 justify-center">
-                            <a href="https://instagram.com" class="text-white hover:text-gray-300">
+                            <a href="https://www.instagram.com/aurorae.boulangerie?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-white hover:text-gray-300">
                                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#ffffff"/>
                                     <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#ffffff"/>

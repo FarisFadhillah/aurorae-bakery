@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="css/output.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,20 +84,20 @@
 		<div class="bg-primary relative">
 			<div class="flex flex-wrap bg-secondary">
 				<div class="w-full ml-36 px-4 lg:w-1/2 pb-16 mt-24">
-					<h1 data-aos="fade-up" class="block font-bold text-clthird mb-5 text-5xl lg:text-6xl">
+					<h1 data-aos="fade-up" data-aos-duration="1000" class="block text-clthird mb-5 text-5xl lg:text-6xl">
 						Selalu Baru
-					<h1 data-aos="fade-up" class="block font-bold text-clthird mb-14 text-5xl lg:text-6xl">
+					<h1 data-aos="fade-up" data-aos-duration="1000" class="block text-clthird mb-14 text-5xl lg:text-6xl">
 						Dipanggang Setiap Hari
 					</h1>
-					<p data-aos="fade-up" data-aos-delay="200" class="w-3/4 font-medium text-clthird mb-14 leading-relaxed lg:text-left text-center text-xl">
+					<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="w-3/4 font-medium text-clthird mb-14 leading-relaxed lg:text-left text-center text-xl">
 						Aurorae Boulangerie, kami berkomitmen untuk menghadirkan 
 						kelezatan roti dan kue yang selalu segar dalam setiap gigitan. 
 						Kami menawarkan berbagai pilihan roti dan kue yang beragam 
 						untuk memenuhi semua selera Anda.</p>
 				</div>
 			</div>
-			<div class="absolute top-0 right-0 w-full lg:w-1/2 h-96 flex items-center mt-24 pt-44">
-				<img src="img/1p.png" alt="hero" class="w-full h-auto">
+			<div data-aos="fade-up" data-aos-duration="1000" class="absolute top-0 right-0 w-full lg:w-1/2 h-96 flex items-center mt-24 pt-44">
+				<img src="img/hero-product.png" alt="hero" class="w-full h-auto">
 			</div>
 		</div>
 	</section>
@@ -104,24 +105,23 @@
 
 	<!-- Produk BunsReg -->
 	<section id="produk" class="relative py-12 bg-secondary">
-		<div class="absolute inset-0 bg-[url('../img/33h.png')] bg-contain bg-top bg-no-repeat opacity-10 mt-4"></div>
-		<div class="absolute inset-0 bg-[url('../img/33h.png')] bg-contain bg-bottom bg-no-repeat opacity-10"></div>
+		<div class="absolute inset-0 bg-[url('../img/bg-product1.png')] bg-contain bg-bottom bg-no-repeat"></div>
 		<div class="relative">
 			<div class="container mx-auto px-4">
 				<!-- Judul Section -->
-				<h2 class="text-5xl mb-12 text-center text-clthird">Buns Reg</h2>
+				<h2 data-aos="fade-up" data-aos-duration="700" class="text-5xl mb-12 text-center text-clthird">Buns Reg</h2>
 	
 				<!-- Grid untuk Card -->
 				<div class="flex flex-wrap gap-8 justify-center">
 					<!-- Baris pertama dengan 3 Card -->
 					<div class="flex flex-wrap gap-8 justify-center mb-8 w-full">
 						<!-- Card 1 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/5">
+						<div data-aos="fade-left" data-aos-duration="1000" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/5">
 							<img src="img/buns-reg/br-1.png" alt="br-1" class="w-full h-48 object-cover">
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Chocomaltine</h3>
-									<span class="text-lg font-bold text-white">40.000</span>
+									<h3 class="text-xl font-medium text-white">Chocomaltine</h3>
+									<span class="text-lg font-medium text-white">40.000</span>
 								</div>
 								<p class="text-white">Roti lembut berisi Chocomaltine. 
 									Perpaduan cokelat dan parutan keju 
@@ -130,12 +130,12 @@
 						</div>
 	
 						<!-- Card 2 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/5">
+						<div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/5">
 							<img src="img/buns-reg/br-2.png" alt="br-2" class="w-full h-48 object-cover">
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Nutella</h3>
-									<span class="text-lg font-bold text-white">40.000</span>
+									<h3 class="text-xl font-medium text-white">Nutella</h3>
+									<span class="text-lg font-medium text-white">40.000</span>
 								</div>
 								<p class="text-white">Roti lembut berisi Nutella. Setiap 
 									gigitan menawarkan sensasi cokelat 
@@ -144,12 +144,12 @@
 						</div>
 	
 						<!-- Card 3 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/5">
+						<div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/5">
 							<img src="img/buns-reg/br-3.png" alt="br-3" class="w-full h-48 object-cover">
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Sweet Cheese</h3>
-									<span class="text-lg font-bold text-white">40.000</span>
+									<h3 class="text-xl font-medium text-white">Sweet Cheese</h3>
+									<span class="text-lg font-medium text-white">40.000</span>
 								</div>
 								<p class="text-white">Berisi keju manis yang lezat. Setiap 
 									gigitan memberikan perpaduan 
@@ -161,12 +161,12 @@
 					<!-- Baris kedua dengan 4 Card -->
 					<div class="flex flex-wrap gap-8 justify-center w-full">
 						<!-- Card 4 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/5">
+						<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/5">
 							<img src="img/buns-reg/br-4.png" alt="br-4" class="w-full h-48 object-cover">
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Garlic Cheese</h3>
-									<span class="text-lg font-bold text-white">40.000</span>
+									<h3 class="text-xl font-medium text-white">Garlic Cheese</h3>
+									<span class="text-lg font-medium text-white">40.000</span>
 								</div>
 								<p class="text-white">Roti lembut berisi campuran keju dan 
 									bawang putih yang gurih.</p>
@@ -174,12 +174,12 @@
 						</div>
 	
 						<!-- Card 5 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/5">
+						<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/5">
 							<img src="img/buns-reg/br-5.png" alt="br-5" class="w-full h-48 object-cover">
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Abon</h3>
-									<span class="text-lg font-bold text-white">40.000</span>
+									<h3 class="text-xl font-medium text-white">Abon</h3>
+									<span class="text-lg font-medium text-white">40.000</span>
 								</div>
 								<p class="text-white">Roti lembut dengan isian abon yang 
 									gurih dan nikmat.</p>
@@ -187,19 +187,19 @@
 						</div>
 	
 						<!-- Card 6 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/5">
+						<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/5">
 							<img src="img/buns-reg/br-6.png" alt="br-6" class="w-full h-48 object-cover">
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Tiramisu</h3>
-									<span class="text-lg font-bold text-white">40.000</span>
+									<h3 class="text-xl font-medium text-white">Tiramisu</h3>
+									<span class="text-lg font-medium text-white">40.000</span>
 								</div>
 								<p class="text-white">Roti lembur dengan isian tiramisu yang creamy dan manis</p>
 							</div>
 						</div>
 	
 						<!-- Card 7 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/5">
+						<div data-aos="fade-right" data-aos-duration="1000" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/5">
 							<img src="img/buns-reg/br-7.png" alt="br-7" class="w-full h-48 object-cover">
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
@@ -218,37 +218,40 @@
 	<!-- End BunsReg -->
 
 	<!-- Produk Milki&Cromb -->
-	<section id="produk" class="relative py-12 bg-primary">
-		<div class="absolute inset-0 bg-[url('../img/33h.png')] bg-contain bg-top bg-no-repeat opacity-20 mt-16"></div>
-		<div class="absolute inset-0 bg-[url('../img/33h.png')] bg-contain bg-bottom bg-no-repeat opacity-20"></div>
+	<section id="produk" class="relative py-12 bg-primary pb-20">
+		<div class="absolute inset-0 bg-[url('../img/bg-product1.png')] bg-contain bg-bottom bg-no-repeat"></div>
 		<div class="relative">
 			<div class="container mx-auto px-4">
 				<!-- Judul Section -->
-				<h2 class="text-5xl mb-12 text-center text-clthird">Milky Buns</h2>
+				<h2 data-aos="fade-up" data-aos-duration="700" class="text-5xl mb-12 text-center text-clthird">Milky Buns</h2>
 	
 				<!-- Grid untuk Card -->
 				<div class="flex flex-wrap gap-8 justify-center">
 					<!-- Baris pertama dengan 3 Card -->
 					<div class="flex flex-wrap gap-8 justify-center mb-8 w-full">
 						<!-- Card 1 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/4">
-							<img src="img/milkbuns/mb-1.png" alt="br-1" class="w-full h-48 object-cover">
+						<div data-aos="fade-left" data-aos-duration="1000" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/5">
+							<div class="relative w-full h-48 overflow-hidden">
+								<img src="img/milkbuns/mb-1.png" alt="br-1" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-auto">
+							</div>
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Original</h3>
-									<span class="text-lg font-bold text-white">40.000</span>
+									<h3 class="text-xl font-medium text-white">Original</h3>
+									<span class="text-lg font-medium text-white">40.000</span>
 								</div>
 								<p class="text-white">Roti lembut dengan rasa susu yang khas dan alami.</p>
 							</div>
-						</div>
+						</div>						
 	
 						<!-- Card 2 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/4">
-							<img src="img/milkbuns/mb-2.png" alt="br-2" class="w-full h-48 object-cover">
+						<div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/5">
+							<div class="relative w-full h-48 overflow-hidden">
+								<img src="img/milkbuns/mb-2.png" alt="br-2" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-auto">
+							</div>							
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Strawberry</h3>
-									<span class="text-lg font-bold text-white">40.000</span>
+									<h3 class="text-xl font-medium text-white">Strawberry</h3>
+									<span class="text-lg font-medium text-white">40.000</span>
 								</div>
 								<p class="text-white">Milk Buns yang lembut dengan 
 									toping ovaltime </p>
@@ -256,12 +259,12 @@
 						</div>
 	
 						<!-- Card 3 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/4">
+						<div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/5">
 							<img src="img/milkbuns/mb-3.png" alt="br-3" class="w-full h-48 object-cover">
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Chocolate</h3>
-									<span class="text-lg font-bold text-white">40.000</span>
+									<h3 class="text-xl font-medium text-white">Chocolate</h3>
+									<span class="text-lg font-medium text-white">40.000</span>
 								</div>
 								<p class="text-white">Roti lembut dengan rasa susu dan 
 									isian cokelat yang kaya dan manis. </p>
@@ -270,17 +273,19 @@
 					</div>
 				</div>
 	
-				<h2 class="text-5xl my-12 text-center text-clthird">Cromboloni</h2>
+				<h2 data-aos="fade-up" data-aos-duration="700" class="text-5xl my-12 text-center text-clthird">Cromboloni</h2>
 				<div class="flex flex-wrap gap-8 justify-center">
 					<!-- Baris kedua dengan 3 Card -->
 					<div class="flex flex-wrap gap-8 justify-center w-full">
 						<!-- Card 4 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/4">
-							<img src="img/cromboloni/cm-1.png" alt="br-4" class="w-full h-48 object-cover">
+						<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/5">
+							<div class="relative w-full h-48 overflow-hidden">
+								<img src="img/cromboloni/cm-1.png" alt="cm-1" class="w-full h-full">
+							</div>
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Dark Chocolate</h3>
-									<span class="text-lg font-bold text-white">25.000</span>
+									<h3 class="text-xl font-medium text-white">Dark Chocolate</h3>
+									<span class="text-lg font-medium text-white">25.000</span>
 								</div>
 								<p class="text-white">Pastry dengan isian cokelat hitam 
 									yang kaya dan lezat.</p>
@@ -288,12 +293,14 @@
 						</div>
 	
 						<!-- Card 5 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/4">
-							<img src="img/cromboloni/cm-2.png" alt="br-5" class="w-full h-48 object-cover">
+						<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/5">
+							<div class="relative w-full h-48 overflow-hidden">
+								<img src="img/cromboloni/cm-2.png" alt="cm-2" class="w-full h-auto">
+							</div>							
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Vanilla</h3>
-									<span class="text-lg font-bold text-white">25.000</span>
+									<h3 class="text-xl font-medium text-white">Vanilla</h3>
+									<span class="text-lg font-medium text-white">25.000</span>
 								</div>
 								<p class="text-white">Pastry dengan tekstur renyah dan rasa 
 									krim keju yang gurih dan creamy. </p>
@@ -301,12 +308,13 @@
 						</div>
 	
 						<!-- Card 6 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/4">
-							<img src="img/cromboloni/cm-3.png" alt="br-6" class="w-full h-48 object-cover">
-							<div class="p-4">
+						<div data-aos="fade-right" data-aos-duration="1000" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/5">
+							<div class="relative w-full h-48 overflow-hidden">
+								<img src="img/cromboloni/cm-3.png" alt="cm-3" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
+							</div>							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Matcha</h3>
-									<span class="text-lg font-bold text-white">25.000</span>
+									<h3 class="text-xl font-medium text-white">Matcha</h3>
+									<span class="text-lg font-medium text-white">25.000</span>
 								</div>
 								<p class="text-white">Perpaduan unik antara tekstur renyah 
 									dan rasa matcha yang khas dan 
@@ -322,23 +330,23 @@
 
 	<!-- Produk Croissant -->
 	<section id="produk" class="relative py-12 bg-secondary ">
-		<div class="absolute inset-0 bg-[url('../img/2p.png')] bg-contain bg-bottom bg-no-repeat opacity-10 h-auto"></div>
+		<div class="absolute inset-0 bg-[url('../img/bg-product1.png')] bg-contain bg-bottom bg-no-repeat"></div>
 		<div class="relative">
 			<div class="container mx-auto px-4">
 				<!-- Judul Section -->
-				<h2 class="text-5xl mb-12 text-center text-clthird">Croissant</h2>
+				<h2 data-aos="fade-up" data-aos-duration="700" class="text-5xl mb-12 text-center text-clthird">Croissant</h2>
 	
 				<!-- Grid untuk Card -->
 				<div class="flex flex-wrap gap-8 justify-center">
 					<!-- Baris pertama dengan 3 Card -->
 					<div class="flex flex-wrap gap-8 justify-center mb-8 w-full">
 						<!-- Card 1 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/4">
+						<div data-aos="fade-left" data-aos-duration="1000" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/5">
 							<img src="img/croissant/cs-1.png" alt="br-1" class="w-full h-48 object-cover">
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Butter Plain</h3>
-									<span class="text-lg font-bold text-white">20.000</span>
+									<h3 class="text-xl font-medium text-white">Butter Plain</h3>
+									<span class="text-lg font-medium text-white">20.000</span>
 								</div>
 								<p class="text-white">Pilihan klasik dan sempurna bagi yang 
 									menginginkan kelezatan croissant 
@@ -347,12 +355,12 @@
 						</div>
 	
 						<!-- Card 2 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/4">
+						<div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/5">
 							<img src="img/croissant/cs-2.png" alt="br-2" class="w-full h-48 object-cover">
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Savoury Cheese</h3>
-									<span class="text-lg font-bold text-white">20.000</span>
+									<h3 class="text-xl font-medium text-white">Savoury Cheese</h3>
+									<span class="text-lg font-medium text-white">20.000</span>
 								</div>
 								<p class="text-white">Perpaduan sempurna antara tekstur 
 									renyah croissant dan rasa gurih dan 
@@ -361,12 +369,12 @@
 						</div>
 	
 						<!-- Card 3 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/4">
+						<div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/5">
 							<img src="img/croissant/cs-3.png" alt="br-3" class="w-full h-48 object-cover">
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Almond</h3>
-									<span class="text-lg font-bold text-white">20.000</span>
+									<h3 class="text-xl font-medium text-white">Almond</h3>
+									<span class="text-lg font-medium text-white">20.000</span>
 								</div>
 								<p class="text-white">Menghadirkan perpaduan antara 
 									tekstur renyah croissant dan rasa 
@@ -378,12 +386,12 @@
 					<!-- Baris kedua dengan 3 Card -->
 					<div class="flex flex-wrap gap-8 justify-center w-full">
 						<!-- Card 4 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/4">
+						<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/5">
 							<img src="img/croissant/cs-4.png" alt="br-4" class="w-full h-48 object-cover">
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Nutella</h3>
-									<span class="text-lg font-bold text-white">20.000</span>
+									<h3 class="text-xl font-medium text-white">Nutella</h3>
+									<span class="text-lg font-medium text-white">20.000</span>
 								</div>
 								<p class="text-white">Perpaduan antara tekstur renyah 
 									croissant dan rasa manis dan creamy 
@@ -392,12 +400,12 @@
 						</div>
 	
 						<!-- Card 5 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/4">
+						<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/5">
 							<img src="img/croissant/cs-5.png" alt="br-5" class="w-full h-48 object-cover">
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Beef & Cheese</h3>
-									<span class="text-lg font-bold text-white">20.000</span>
+									<h3 class="text-xl font-medium text-white">Beef & Cheese</h3>
+									<span class="text-lg font-medium text-white">20.000</span>
 								</div>
 								<p class="text-white">Perpaduan antara tekstur renyah 
 									croissant, kelembutan daging sapi, 
@@ -406,12 +414,12 @@
 						</div>
 	
 						<!-- Card 6 -->
-						<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/4">
+						<div data-aos="fade-right" data-aos-duration="1000" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/5">
 							<img src="img/croissant/cs-6.png" alt="br-6" class="w-full h-48 object-cover">
 							<div class="p-4">
 								<div class="flex justify-between items-center mb-2">
-									<h3 class="text-xl font-semibold text-white">Vanilla</h3>
-									<span class="text-lg font-bold text-white">20.000</span>
+									<h3 class="text-xl font-medium text-white">Vanilla</h3>
+									<span class="text-lg font-medium text-white">20.000</span>
 								</div>
 								<p class="text-white">Perpaduan klasik antara tekstur 
 									renyah dan rasa manis dan creamy 
@@ -427,22 +435,21 @@
 
 	<!-- Produk Section -->
 	<section id="produk" class="relative py-12 bg-primary">
-		<div class="absolute inset-0 bg-[url('../img/3p.png')] bg-contain bg-bottom bg-no-repeat opacity-20 h-auto"></div>
-		<div class="absolute inset-0 bg-[url('../img/3p.png')] bg-contain bg-top bg-no-repeat opacity-20 h-auto"></div>
+		<div class="absolute inset-0 bg-[url('../img/bg-product2.png')] bg-contain bg-bottom bg-no-repeat"></div>
 		<div class="relative">
 			<div class="container mx-auto px-4">
 				<div class="flex flex-wrap -mx-4">
 					<!-- Bagian Kiri - Sourdough -->
 					<div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-						<h2 class="text-5xl mb-8 text-center text-clthird">Sourdough</h2>
+						<h2 data-aos="fade-right" data-aos-duration="700" class="text-5xl mb-8 text-center text-clthird">Sourdough</h2>
 						<div class="flex flex-wrap gap-8 justify-center">
 							<!-- Card 1 -->
-							<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-5/12">
+							<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-5/12">
 								<img src="img/sbdc/s-1.png" alt="sd-1" class="w-full h-48 object-cover">
 								<div class="p-4">
 									<div class="flex justify-between items-center mb-2">
-										<h3 class="text-xl font-semibold text-white">Cranberry Cheese</h3>
-										<span class="text-lg font-bold text-white">35.000</span>
+										<h3 class="text-xl font-medium text-white">Cranberry Cheese</h3>
+										<span class="text-lg font-medium text-white">35.000</span>
 									</div>
 									<p class="text-white">Kelembutan roti sourdough dengan 
 										kesegaran cranberry dan rasa creamy 
@@ -451,12 +458,12 @@
 							</div>
 
 							<!-- Card 2 -->
-							<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-5/12">
+							<div data-aos="fade-right" data-aos-duration="1000" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-5/12">
 								<img src="img/sbdc/s-2.png" alt="sd-2" class="w-full h-48 object-cover">
 								<div class="p-4">
 									<div class="flex justify-between items-center mb-2">
-										<h3 class="text-xl font-semibold text-white">Double Choco</h3>
-										<span class="text-lg font-bold text-white">45.000</span>
+										<h3 class="text-xl font-medium text-white">Double Choco</h3>
+										<span class="text-lg font-medium text-white">45.000</span>
 									</div>
 									<p class="text-white">Kelembutan roti sourdough dengan 
 										kelezatan rasa cokelat ganda yang 
@@ -468,15 +475,15 @@
 
 					<!-- Bagian Kanan - Cookies and Drink -->
 					<div class="w-full lg:w-1/2 px-4">
-						<h2 class="text-5xl mb-8 text-center text-clthird">Cookies and Drink</h2>
+						<h2 data-aos="fade-left" data-aos-duration="700" class="text-5xl mb-8 text-center text-clthird">Cookies and Drink</h2>
 						<div class="flex flex-wrap gap-8 justify-center">
 							<!-- Card 1 -->
-							<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-5/12">
+							<div data-aos="fade-left" data-aos-duration="1000" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-5/12">
 								<img src="img/sbdc/s-3.png" alt="cd-1" class="w-full h-48 object-cover">
 								<div class="p-4">
 									<div class="flex justify-between items-center mb-2">
-										<h3 class="text-xl font-semibold text-white">Iced Coffee Latte</h3>
-										<span class="text-lg font-bold text-white">25.000</span>
+										<h3 class="text-xl font-medium text-white">Iced Coffee Latte</h3>
+										<span class="text-lg font-medium text-white">25.000</span>
 									</div>
 									<p class="text-white">Minuman kopi dingin dengan 
 										perpaduan rasa pahit kopi dan creamy 
@@ -485,12 +492,12 @@
 							</div>
 
 							<!-- Card 2 -->
-							<div class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-5/12">
+							<div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" class="bg-clthird rounded-xl shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-5/12">
 								<img src="img/sbdc/s-4.png" alt="cd-2" class="w-full h-48 object-cover">
 								<div class="p-4">
 									<div class="flex justify-between items-center mb-2">
-										<h3 class="text-xl font-semibold text-white">Belgian Cookies</h3>
-										<span class="text-lg font-bold text-white">45.000</span>
+										<h3 class="text-xl font-medium text-white">Belgian Cookies</h3>
+										<span class="text-lg font-medium text-white">45.000</span>
 									</div>
 									<p class="text-white">perpaduan sempurna antara tekstur 
 										renyah cookies dan rasa manis dan 
@@ -505,51 +512,51 @@
 	</section>
 
     <!-- Footer -->
-	<footer class="bg-clthird rounded-t-3xl py-12">
-		<div class="container mx-auto px-4">
-			<div class="flex flex-col items-center">
-				<!-- Flex Container for Footer Sections -->
-				<div class="flex flex-wrap items-start justify-center">
-					<!-- Logo and Divider -->
-					<div class="flex items-center mr-24">
-						<img src="img/LogoFooter.png" alt="Logo" class="h-28">
-						<div class="border-r border-white h-44 ml-24"></div>
-					</div>
+    <footer class="bg-clthird rounded-t-3xl py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center">
+                <!-- Flex Container for Footer Sections -->
+                <div class="flex flex-wrap items-start justify-center">
+                    <!-- Logo and Divider -->
+                    <div class="flex items-center mr-24">
+                        <img src="img/LogoFooter.png" alt="Logo" class="h-28">
+                        <div class="border-r border-white h-44 ml-24"></div>
+                    </div>
 
-					<!-- StoreName -->
-					<div class="text-white mx-4 text-left">
-						<p class="text-lg font-bold mb-2">Aurorae Boulangerie</p>
-						<p class="text-md">Outlet Location</p>
-					</div>
+                    <!-- StoreName -->
+                    <div class="text-white mx-4 text-left">
+                        <p class="text-lg font-bold mb-2">Aurorae Boulangerie</p>
+                        <a href="https://maps.app.goo.gl/iaaUhWfeBMfchK226"><p class="text-md">Outlet Location</p></a>
+                    </div>
 
-					<!-- Contact Us -->
-					<div class="text-white mx-24 text-left">
-						<p class="text-lg font-bold mb-2">Contact Us</p>
-						<p class="text-md">Jl. Kav Industri No. 5C.</p>
-						<p class="text-md mb-2">Bandung Kulon, Bandung</p>
-						<p class="text-md">WA: +62 821-1201-0671</p>
-					</div>
+                    <!-- Contact Us -->
+                    <div class="text-white mx-24 text-left">
+                        <p class="text-lg font-bold mb-2">Contact Us</p>
+                        <p class="text-md">Jl. Kav Industri No. 5C.</p>
+                        <p class="text-md mb-2">Bandung Kulon, Bandung</p>
+                        <p class="text-md">WA: +62 821-1201-0671</p>
+                    </div>
 
-					<!-- Follow Us -->
-					<div class="text-white mx-4 text-left">
-						<p class="text-lg font-bold mb-2">Follow Us</p>
-						<div class="flex space-x-4 justify-center">
-							<a href="https://instagram.com" class="text-white hover:text-gray-300">
-								<svg class="h-6 w-6" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#ffffff"/>
-									<path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#ffffff"/>
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#ffffff"/>
-									</svg>
-							</a>
-							<a href="https://tiktok.com" class="text-white hover:text-gray-300">
-								<svg class="h-6 w-6" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#ffffff;stroke-miterlimit:10;stroke-width:1.89px;}</style></defs><path class="cls-1" d="M12.94,1.61V15.78a2.83,2.83,0,0,1-2.83,2.83h0a2.83,2.83,0,0,1-2.83-2.83h0a2.84,2.84,0,0,1,2.83-2.84h0V9.17h0A6.61,6.61,0,0,0,3.5,15.78h0a6.61,6.61,0,0,0,6.61,6.61h0a6.61,6.61,0,0,0,6.61-6.61V9.17l.2.1a8.08,8.08,0,0,0,3.58.84h0V6.33l-.11,0a4.84,4.84,0,0,1-3.67-4.7H12.94Z"/></svg>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+                    <!-- Follow Us -->
+                    <div class="text-white mx-4 text-left">
+                        <p class="text-lg font-bold mb-2">Follow Us</p>
+                        <div class="flex space-x-4 justify-center">
+                            <a href="https://www.instagram.com/aurorae.boulangerie?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-white hover:text-gray-300">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#ffffff"/>
+                                    <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#ffffff"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#ffffff"/>
+                                    </svg>
+                            </a>
+                            <a href="https://tiktok.com" class="text-white hover:text-gray-300">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#ffffff;stroke-miterlimit:10;stroke-width:1.89px;}</style></defs><path class="cls-1" d="M12.94,1.61V15.78a2.83,2.83,0,0,1-2.83,2.83h0a2.83,2.83,0,0,1-2.83-2.83h0a2.84,2.84,0,0,1,2.83-2.84h0V9.17h0A6.61,6.61,0,0,0,3.5,15.78h0a6.61,6.61,0,0,0,6.61,6.61h0a6.61,6.61,0,0,0,6.61-6.61V9.17l.2.1a8.08,8.08,0,0,0,3.58.84h0V6.33l-.11,0a4.84,4.84,0,0,1-3.67-4.7H12.94Z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 	<!-- Copyright -->
 	<div class="bg-clhover text-center py-4">
